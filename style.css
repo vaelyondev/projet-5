@@ -11,7 +11,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 16px 0px 16px; 
+    padding: 0px 16px 0px 16px;
     border-bottom: 1px solid #B8B6BF;
 }
 
@@ -26,7 +26,9 @@ nav {
     text-decoration: none;
 }
 
-section#concepts, #languages, #tools {
+section#concepts,
+#languages,
+#tools {
     margin: 86px 16px;
     max-width: 960px;
     margin: auto;
@@ -123,13 +125,14 @@ h2 {
     font-size: 25px;
 }
 
-@media (max-width: 768px)
-{
+@media (max-width: 768px) {
     #concepts .card {
         width: 100%;
     }
 
-    #concepts, #languages, #tools {
+    #concepts,
+    #languages,
+    #tools {
         width: calc(100% - 16px);
     }
 

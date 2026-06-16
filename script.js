@@ -6,7 +6,7 @@ titles.forEach(title => {
         const definition = e.target.closest('.definition');
         definition.classList.toggle('open');
         const img = definition.querySelector('img');
-        if(img.getAttribute('src') === 'img/ferme.png')
+        if (img.getAttribute('src') === 'img/ferme.png')
             img.setAttribute('src', 'img/ouvert.png');
         else
             img.setAttribute('src', 'img/ferme.png');
@@ -21,7 +21,7 @@ const slider = document.querySelector('.languages-content');
 const nbElements = slider.childElementCount;
 let i = 0;
 right.addEventListener('click', () => {
-    if(i < nbElements - 4)
+    if (i < nbElements - 4)
         i++;
     else
         i = 0;
@@ -30,7 +30,7 @@ right.addEventListener('click', () => {
 });
 
 left.addEventListener('click', () => {
-    if(i > 0)
+    if (i > 0)
         i--;
     else
         i = nbElements - 4;
