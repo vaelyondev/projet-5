@@ -1,284 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon tableau de bord</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Print it ! - Impressions d'entreprise</title>
+	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <nav>
-        <img src="img/avatar.png" alt="Avatar">
+<header class="container">
+	<h1>
+		<img class="logo" src="./assets/images/logo.png" alt="Print it ! Impressions d'entreprises" >
+	</h1>
+	<a class="btn devis" href="mailto:contact@print-it.tld">Devis</a>
+</header>
+<main>
+	<div id="banner">
+		<img class="banner-img" src="./assets/images/slideshow/slide1.jpg" alt="Banner Print-it">
+		<p>Impressions tous formats <span>en boutique et en ligne</span></p>
+		<div class="dots">
+		</div>
+	</div>
+	<section id="about-us" class="container">
+		<div>
+			<h2>Qui sommes-nous ?</h2>
+			<ul>
+				<li>Depuis près de 60 ans nous sommes un imprimeur familial spécialisé dans les besoins d’entreprises de petite et grande taille. Implantés à Rennes dans le quartier Bréquigny, nous accompagnons nos clients dans leurs projets d’impression.</li>
+				<li>De la création de vos fichiers à la livraison de vos imprimés, nous mettons tout notre savoir-faire à votre disposition afin de répondre au mieux à vos attentes.</li>
+			</ul>
+		</div>
+		<aside>
+			<img src="./assets/images/colors.jpg" alt="palette multicolore">
+		</aside>
+	</section>
+	<section id="products" class="container">
+		<div>
+			<h2>Nos produits</h2>
+			<p>Grâce à nos nombreuses années d'expérience dans l'impression de produits évènementiels et supports de communication, nous ne cessons d'innover et de perfectionner nos services afin de satisfaire au mieux nos clients. Vous pourrez parcourir les différentes rubriques du site afin de découvrir notre large gamme de papiers et finitions, pour des produits aussi divers que les dépliants ou plaquettes promotionnelles, les brochures, les flyers, les goodies d’entreprises, les autocollants de toutes tailles... </p>
+		</div>
+		<aside>
+			<img src="./assets/images/yellow-book.jpg" alt="Imprimeur avec un livre jaune dans les mains">
+		</aside>
 
-        <ul id="menu">
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Bases du web</a></li>
-            <li><a href="#">Plan d'apprentissage</a></li>
-            <li><a href="#">Projets</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+	</section>
+	<section id="question" class="bg-yellow">
+		<h2>Une question? Un devis?</h2>
+		<p>Appelez-nous au 02 12 34 56 78 ou faites une demande de devis ici :</p>
+		<a href="mailto:contact@print-it.tld" class="btn devis">Devis</a>
+	</section>
+	<section id="why-us" class="container">
+		<h2>Pourquoi faire appel à nous?</h2>
+		<div>
+			<article>
+				<img src="./assets/images/proximity-icon.png" alt="Icone Proximité">
+				<h3>Proximité</h3>
+				<p>Facile d’accès, une équipe compétente et à l'écoute des clients vous attend pour tous vos besoins d'impression et en communication visuelle.</p>
+			</article>
+			<article>
+				<img src="./assets/images/quality-icon.png" alt="Icone Qualité">
+				<h3>Qualité</h3>
+				<p>Qu'il s'agisse de copies simples, de brochures, de cartes de visite ou de conception, nous vous garantissons toujours des résultats optimaux.</p>
+			</article>
+			<article>
+				<img src="./assets/images/speedy-icon.png" alt="Rapidité Qualité">
+				<h3>Rapidité</h3>
+				<p>Vous pouvez compter sur nous pour répondre à vos sollicitations en temps et en heure.</p>
+			</article>
+		</div>
+	</section>
+	<section id="contact" class="bg-lightblue">
+		<div class="container">
+			<div>
+				<h2>Contact</h2>
+				<div>
+					<h3>Par téléphone</h3>
+					<ul>
+						<li>Appelez-nous au 02 12 34 56 78</li>
+						<li>Lun-Ven : 9h30-18h30</li>
+						<li>Sam : 10h-13h et 14h-18h30</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Par e-mail</h3>
+					<p>
+						<a href="mailto:contact@print-it.tld" class="btn">Nous écrire</a>
+					</p>
+				</div>
+				<div>
+					<h3>Se rendre en boutique</h3>
+					<p>5, rue Yves Noël,<br>
+						35200 Rennes<br>
+						<img class="inline-icon" src="./assets/images/metro.png" alt="metro"/> Clémenceau</p>
+				</div>
+			</div>
+			<div>
+				<img src="./assets/images/magnifying-glass.jpg" alt="Loupe avec palette bleue">
+			</div>
 
-    <header>
-        <div class="header-content">
-            <h1>Les bases du Web par Aymerik</h1>
-            <p class="subtitle">Une page pour concentrer les informations clés du Web et du développement !</p>
-
-            <h2 class="title-header">Cours suivi</h2>
-            <img class="course-image" src="img/cours.png" alt="Cours Comprendre le web">
-        </div>
-    </header>
-
-    <section id="concepts">
-        <h2>Concepts clés</h2>
-
-        <div class="flex-concepts">
-            <article class="card">
-                <h3>Partie 1 - Découvrez le web et ses origines</h3>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Web</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Internet</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Cloud</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>W3C</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-            </article>
-            <article class="card">
-                <h3>Partie 2 - Distinguez les langages du web</h3>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Langages client</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Navigateurs</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Langages serveur</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Frameworks</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Bases de données</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Site responsive</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Application mobile</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-            </article>
-            <article class="card">
-                <h3>Partie 3 - Découvrez le fonctionnement du réseau</h3>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Serveurs</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Adresse IP</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Nom d'hôte et DNS</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Protocoles</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-            </article>
-            <article class="card">
-                <h3>Partie 4 - Identifiez les métiers du web</h3>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Développeurs</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Product Managers et chefs de projet</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Designers</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Testeurs</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-                <div class="definition">
-                    <div class="title-definition">
-                        <img src="img/ferme.png" alt="Ouvrir la définition">
-                        <h4>Techniciens informatique</h4>
-                    </div>
-                    <p class="content-definition">Contenu définition</p>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section id="languages">
-        <h2>Langages de développement web</h2>
-
-        <div class="flex-languages">
-            <div class="languages-content">
-                <article class="card">
-                    <div class="language-title">
-                        <img src="img/html.png" alt="HTML">
-                        <h3>HTML</h3>
-                    </div>
-                    <p>Squelette du site web. Il définit de base du contenu, comme les titres, les paragraphes, les
-                        images, etc.</p>
-                </article>
-                <article class="card">
-                    <div class="language-title">
-                        <img src="img/css.png" alt="CSS">
-                        <h3>CSS</h3>
-                    </div>
-                    <p>Squelette du site web. Il définit de base du contenu, comme les titres, les paragraphes, les
-                        images, etc.</p>
-                </article>
-                <article class="card">
-                    <div class="language-title">
-                        <img src="img/js.png" alt="JavaScript">
-                        <h3>JavaScript</h3>
-                    </div>
-                    <p>Squelette du site web. Il définit de base du contenu, comme les titres, les paragraphes, les
-                        images, etc.</p>
-                </article>
-                <article class="card">
-                    <div class="language-title">
-                        <img src="img/php.png" alt="PHP">
-                        <h3>PHP</h3>
-                    </div>
-                    <p>Squelette du site web. Il définit de base du contenu, comme les titres, les paragraphes, les
-                        images, etc.</p>
-                </article>
-                <article class="card">
-                    <div class="language-title">
-                        <img src="img/python.png" alt="Python">
-                        <h3>Python</h3>
-                    </div>
-                    <p>Squelette du site web. Il définit de base du contenu, comme les titres, les paragraphes, les
-                        images, etc.</p>
-                </article>
-                <article class="card">
-                    <div class="language-title">
-                        <img src="img/c.png" alt="C#">
-                        <h3>C#</h3>
-                    </div>
-                    <p>Squelette du site web. Il définit de base du contenu, comme les titres, les paragraphes, les
-                        images, etc.</p>
-                </article>
-                <article class="card">
-                    <div class="language-title">
-                        <img src="img/java.png" alt="Java">
-                        <h3>Java</h3>
-                    </div>
-                    <p>Squelette du site web. Il définit de base du contenu, comme les titres, les paragraphes, les
-                        images, etc.</p>
-                </article>
-                <article class="card">
-                    <div class="language-title">
-                        <img src="img/sql.png" alt="SQL">
-                        <h3>SQL</h3>
-                    </div>
-                    <p>Squelette du site web. Il définit de base du contenu, comme les titres, les paragraphes, les
-                        images, etc.</p>
-                </article>
-            </div>
-        </div>
-        <div class="slider-arrows">
-            <img src="img/gauche.png" alt="Précédent" id="left">
-            <img src="img/droite.png" alt="Suivant" id="right">
-        </div>
-    </section>
-
-    <section id="tools">
-        <h2>Boîte à outils du développeur</h2>
-
-        <ul class="card">
-            <li><strong>IDE, comme VSCode</strong> : Définition</li>
-            <li><strong>Github</strong> : Définition</li>
-            <li><strong>Librairies et bibliothèques</strong> : Définition</li>
-            <li><strong>Frameworks</strong> : Définition</li>
-        </ul>
-    </section>
-    <script src="script.js"></script>
+		</div>
+	</section>
+</main>
+<footer>
+	<div>
+		<p class="footer-contact">Contact</p>
+		<ul>
+			<li>Appelez-nous au 02 12 34 56 78</li>
+			<li>Lun-Ven : 9h30-18h30</li>
+			<li>Sam : 10h-13h et 14h-18h30</li>
+		</ul>
+	</div>
+	<div>
+		<p>5, rue Yves Noël,35200 Rennes<br>
+			<img src="./assets/images/metro.png" alt="metro"/> Clémenceau</p>
+	</div>
+	<div>
+		<a href="mailto:contact@print-it.tld" class="btn">Nous écrire</a>
+		<a href="mailto:contact@print-it.tld?subject=Demande&nbsp;de&nbsp;devis" class="btn devis">Devis</a>
+	</div>
+	<div>
+		<img class="footer-logo" src="./assets/images/logo.png" alt="Print it ! Impressions d'entreprises" >
+	</div>
+</footer>
+<script src="./assets/script.js"></script>
 </body>
-
 </html>
