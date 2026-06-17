@@ -220,8 +220,18 @@ header {
 
 /* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
 /* Gestion des fleches du carrousel */
-#banner .arrow {
+#banner .arrow_left,
+#banner .arrow_right {
 	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#banner button {
+	border: none;
+	background: none;
+	padding: 0;
+	cursor: pointer;
 }
 
 #banner .arrow_left {
